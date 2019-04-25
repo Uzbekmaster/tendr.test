@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Tabs | Bootstrap Based Admin Template - Material Design</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet"/>
+
+    <!-- Animation Css -->
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet"/>
+
+    <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../css/themes/all-themes.css" rel="stylesheet"/>
+</head>
+
+<body class="theme-green">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Please wait...</p>
+    </div>
+</div>
+<!-- #END# Page Loader -->
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+<!-- Search Bar -->
+<div class="search-bar">
+    <div class="search-icon">
+        <i class="material-icons">search</i>
+    </div>
+    <input type="text" placeholder="START TYPING...">
+    <div class="close-search">
+        <i class="material-icons">close</i>
+    </div>
+</div>
+<!-- #END# Search Bar -->
+<!-- Top Bar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
+               data-target="#navbar-collapse" aria-expanded="false"></a>
+            <!--<a href="javascript:void(0);" class="bars"></a>-->
+            <a class="navbar-brand" href="#">Mening tendrlarim</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Akkount -->
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        <i class="material-icons">account_box</i>
+                        <!--<span class="label-count">7</span>-->
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">Profile</li>
+                        <li class="body">
+                            <ul class="menu">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-light-green">
+                                            <i class="material-icons">person</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Foydalanuvchi ma'lumotlari</h4>
+                                            <p>
+                                                <i class="material-icons">lock</i> Tizim xavfsiligi ma'lumotlari
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-cyan">
+                                            <i class="material-icons">logout</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Tizimdan chiqish</h4>
+                                            <p>
+                                                <i class="material-icons">mood_bad</i>Sizni yana kutamiz
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- #END# Akkount -->
+                <!-- Tendrlar -->
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        <i class="material-icons">trending_up</i>
+                        <!--<span class="label-count">7</span>-->
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">Tendrlar</li>
+                        <li class="body">
+                            <ul class="menu">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-light-green">
+                                            <i class="material-icons">spellcheck</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Faol tenderlar</h4>
+                                            <p>
+                                                <i class="material-icons">spellcheck</i> Qatnashish uchun ochiq tendrlar
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-purple">
+                                            <i class="material-icons">home</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Mening tendrlarim</h4>
+                                            <p>
+                                                <i class="material-icons">home</i> Men Tendr qilganlar tenderlar
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-cyan">
+                                            <i class="material-icons">home</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Men qatnashayotgan tendrlar</h4>
+                                            <p>
+                                                <i class="material-icons">home</i> Men qatnashayotgan tendrlar
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- #END# Tendrlar -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card"></div>
+            </div>
+        </div>
+        <!-- Tabs With Icon Title -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            Assalomu alaykum! Tendrlar tizimiga hush kelibsiz!
+                        </h2>
+                        <ul class="header-dropdown m-r--5">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                                   role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);">Action</a></li>
+                                    <li><a href="javascript:void(0);">Another action</a></li>
+                                    <li><a href="javascript:void(0);">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs tab-col-green" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#home_with_icon_title" data-toggle="tab">
+                                    <i class="material-icons">home</i> Men e'lon qilgan tendrlar
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#profile_with_icon_title" data-toggle="tab">
+                                    <i class="material-icons">face</i> Men qatnashayotgan tendrlar
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#messages_with_icon_title" data-toggle="tab">
+                                    <i class="material-icons">open_in_new</i> Qatnashish uchun ochiq tendrlar
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fadeIn animated" id="home_with_icon_title">
+                                <b>Men e'lon qilgan tendrlar</b>
+                                <p>
+                                <div class="body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                            <thead>
+                                            <tr>
+                                                <th>Tendr beruvchi</th>
+                                                <th>Tendr nomi</th>
+                                                <th>Qisqa izoh</th>
+                                                <th>Muddat</th>
+                                                <th>Tahminiy byudjet</th>
+                                                <th>Ko`rish</th>
+                                            </tr>
+                                            </thead>
+                                            <tfoot>
+                                            <tr>
+                                                <th>Tendr beruvchi</th>
+                                                <th>Tendr nomi</th>
+                                                <th>Qisqa izoh</th>
+                                                <th>Muddat</th>
+                                                <th>Tahminiy byudjet</th>
+                                                <th>Ko`rish</th>
+                                            </tr>
+                                            </tfoot>
+                                            <tbody>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 001</td>
+                                                <td>Tendr 001 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 002</td>
+                                                <td>Tendr 002 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 003</td>
+                                                <td>Tendr 003 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 004</td>
+                                                <td>Tendr 004 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 005</td>
+                                                <td>Tendr 005 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 006</td>
+                                                <td>Tendr 006 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 007</td>
+                                                <td>Tendr 007 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade flipInX animated" id="profile_with_icon_title">
+                                <b>Men qatnashayotgan tendrlar</b>
+                                <p>
+                                <div class="body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                            <thead>
+                                            <tr>
+                                                <th>Tendr beruvchi</th>
+                                                <th>Tendr nomi</th>
+                                                <th>Qisqa izoh</th>
+                                                <th>Muddat</th>
+                                                <th>Tahminiy byudjet</th>
+                                                <th>Ko`rish</th>
+                                            </tr>
+                                            </thead>
+                                            <tfoot>
+                                            <tr>
+                                                <th>Tendr beruvchi</th>
+                                                <th>Tendr nomi</th>
+                                                <th>Qisqa izoh</th>
+                                                <th>Muddat</th>
+                                                <th>Tahminiy byudjet</th>
+                                                <th>Ko`rish</th>
+                                            </tr>
+                                            </tfoot>
+                                            <tbody>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 001</td>
+                                                <td>Tendr 001 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 002</td>
+                                                <td>Tendr 002 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 003</td>
+                                                <td>Tendr 003 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 004</td>
+                                                <td>Tendr 004 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 005</td>
+                                                <td>Tendr 005 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 006</td>
+                                                <td>Tendr 006 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 007</td>
+                                                <td>Tendr 007 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade flipInX animated" id="messages_with_icon_title">
+                                <b>Qatnashish uchun ochiq tendrlar</b>
+                                <p>
+                                <div class="body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                            <thead>
+                                            <tr>
+                                                <th>Tendr beruvchi</th>
+                                                <th>Tendr nomi</th>
+                                                <th>Qisqa izoh</th>
+                                                <th>Muddat</th>
+                                                <th>Tahminiy byudjet</th>
+                                                <th>Ko`rish</th>
+                                            </tr>
+                                            </thead>
+                                            <tfoot>
+                                            <tr>
+                                                <th>Tendr beruvchi</th>
+                                                <th>Tendr nomi</th>
+                                                <th>Qisqa izoh</th>
+                                                <th>Muddat</th>
+                                                <th>Tahminiy byudjet</th>
+                                                <th>Ko`rish</th>
+                                            </tr>
+                                            </tfoot>
+                                            <tbody>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 001</td>
+                                                <td>Tendr 001 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 002</td>
+                                                <td>Tendr 002 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 003</td>
+                                                <td>Tendr 003 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 004</td>
+                                                <td>Tendr 004 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 005</td>
+                                                <td>Tendr 005 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 006</td>
+                                                <td>Tendr 006 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tendr beruvchi 001</td>
+                                                <td>Tendr 007</td>
+                                                <td>Tendr 007 ga qisqacha izoh</td>
+                                                <td>01.01.2019 &boxh; 01.05.2019</td>
+                                                <td>100.000.000 so'm</td>
+                                                <td>
+                                                    <a href="#" title="Open" aria-label="Open" data-pjax="0" style="padding: 3px;"><span class="glyphicon glyphicon-folder-open"></span></a>
+                                                    <a href="#" title="Download document" aria-label="Download document" data-pjax="0"  style="padding: 3px;"><span class="glyphicon glyphicon-file"></span></a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #END# Tabs With Icon Title -->
+
+    </div>
+</section>
+
+<!-- Jquery Core Js -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="../../plugins/node-waves/waves.js"></script>
+
+<!-- Custom Js -->
+<script src="../../js/admin.js"></script>
+
+<!-- Demo Js -->
+<script src="../../js/demo.js"></script>
+</body>
+
+</html>

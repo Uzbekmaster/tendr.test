@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Tabs | Bootstrap Based Admin Template - Material Design</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet"/>
+
+    <!-- Animation Css -->
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet"/>
+
+    <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../css/themes/all-themes.css" rel="stylesheet"/>
+</head>
+
+<body class="theme-green">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Please wait...</p>
+    </div>
+</div>
+<!-- #END# Page Loader -->
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+<!-- Search Bar -->
+<div class="search-bar">
+    <div class="search-icon">
+        <i class="material-icons">search</i>
+    </div>
+    <input type="text" placeholder="START TYPING...">
+    <div class="close-search">
+        <i class="material-icons">close</i>
+    </div>
+</div>
+<!-- #END# Search Bar -->
+<!-- Top Bar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
+               data-target="#navbar-collapse" aria-expanded="false"></a>
+            <!--<a href="javascript:void(0);" class="bars"></a>-->
+            <a class="navbar-brand" href="#">Tender 001</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Akkount -->
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        <i class="material-icons">account_box</i>
+                        <!--<span class="label-count">7</span>-->
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">Profile</li>
+                        <li class="body">
+                            <ul class="menu">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-light-green">
+                                            <i class="material-icons">person</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Foydalanuvchi ma'lumotlari</h4>
+                                            <p>
+                                                <i class="material-icons">lock</i> Tizim xavfsiligi ma'lumotlari
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-cyan">
+                                            <i class="material-icons">logout</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Tizimdan chiqish</h4>
+                                            <p>
+                                                <i class="material-icons">mood_bad</i>Sizni yana kutamiz
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- #END# Akkount -->
+                <!-- Tendrlar -->
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        <i class="material-icons">trending_up</i>
+                        <!--<span class="label-count">7</span>-->
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">Tendrlar</li>
+                        <li class="body">
+                            <ul class="menu">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-light-green">
+                                            <i class="material-icons">spellcheck</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Tendr 001</h4>
+                                            <p>
+                                                <i class="material-icons">spellcheck</i> Qatnashish uchun ochiq tendrlar
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-purple">
+                                            <i class="material-icons">home</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Mening tendrlarim</h4>
+                                            <p>
+                                                <i class="material-icons">home</i> Men e'lon qilganlar tenderlar
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-cyan">
+                                            <i class="material-icons">home</i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>Men qatnashayotgan tendrlar</h4>
+                                            <p>
+                                                <i class="material-icons">home</i> Men qatnashayotgan tendrlar
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- #END# Tendrlar -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card"></div>
+            </div>
+        </div>
+        <!-- Tabs With Icon Title -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            Assalomu alaykum! Tendrlar tizimiga hush kelibsiz!
+                        </h2>
+                        <ul class="header-dropdown m-r--5">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                                   role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);">Action</a></li>
+                                    <li><a href="javascript:void(0);">Another action</a></li>
+                                    <li><a href="javascript:void(0);">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs tab-col-green" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#home_with_icon_title" data-toggle="tab">
+                                    <i class="material-icons">volume_up</i> Tendr haqida
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#profile_with_icon_title" data-toggle="tab">
+                                    <i class="material-icons">insert_comment</i> Berilgan arizalar
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#messages_with_icon_title" data-toggle="tab">
+                                    <i class="material-icons">info_outline</i> Kelgan hisobotlar
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active flipInX animated" id="home_with_icon_title">
+                                <b>Tendr haqida</b>
+                                <div class="body">
+                                    <div class="tendr-view">
+
+                                        <h1>My tendr 001</h1>
+
+                                        <p>
+                                            <a class="btn btn-primary" href="/user/my-tendrs/set-status?id=1">Holatini o`zgartirish</a>
+                                            <a class="btn btn-primary" href="/user/my-tendrs/delete?id=1" data-confirm="Aminmisiz?" data-method="post">Tugatish</a>
+                                        </p>
+
+                                        <table id="w0" class="table table-striped table-bordered detail-view">
+                                            <tbody>
+                                            <tr>
+                                                <th>Name</th>
+                                                <td>My tendr 001</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Descreption</th>
+                                                <td>My tendr 001 short</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Descreption Fully</th>
+                                                <td>My tendr 001 long</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Document</th>
+                                                <td><a href="/files/filename.file">Download document file</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Open Date</th>
+                                                <td>2019-04-15 00:00:00</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Close Date</th>
+                                                <td>2019-04-15 00:00:00</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Preview Start Date</th>
+                                                <td>2019-04-15 00:00:00</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Preview Finish Date</th>
+                                                <td>2019-04-15 00:00:00</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Preview Balance</th>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Status</th>
+                                                <td>new</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tendr Group Name</th>
+                                                <td>Programming</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade flipInX animated" id="profile_with_icon_title">
+                                <b>Berilgan a'rizalar</b>
+                                <div class="body">
+                                    <div class="tendr-view">
+
+
+                                        <h1>Qatnashish uchun ariza berganlar</h1>
+                                        <div id="w1" class="grid-view">
+                                            <div class="summary">Showing <b>1-2</b> of <b>2</b> items.</div>
+                                            <table class="table table-striped table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Full name</th>
+                                                    <th><a href="/user/my-tendrs/view?id=1&amp;sort=participant_preview_balance"
+                                                           data-sort="participant_preview_balance">Preview balance</a></th>
+                                                    <th><a href="/user/my-tendrs/view?id=1&amp;sort=participant_preview_days"
+                                                           data-sort="participant_preview_days">Preview days</a></th>
+                                                    <th><a href="/user/my-tendrs/view?id=1&amp;sort=participant_confirm" data-sort="participant_confirm">Confirm</a>
+                                                    </th>
+                                                    <th class="action-column">&nbsp;</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr data-key="2">
+                                                    <td>1</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>546547000</td>
+                                                    <td>1515</td>
+                                                    <td>yes</td>
+                                                    <td><a href="/user/my-tendrs/participant?id=2"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                                    </td>
+                                                </tr>
+                                                <tr data-key="3">
+                                                    <td>2</td>
+                                                    <td>User</td>
+                                                    <td>1000000</td>
+                                                    <td>300</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/participant?id=3"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade flipInX animated" id="messages_with_icon_title">
+                                <b>Kelgan hisobotlar</b>
+                                <div class="body">
+                                    <div class="tendr-view">
+
+                                        <h1>My tendr 001</h1>
+
+                                        <p>
+                                            <a class="btn btn-primary" href="/user/my-tendrs/update?id=1">Update</a>
+                                            <a class="btn btn-danger" href="/user/my-tendrs/delete?id=1"
+                                               data-confirm="Are you sure you want to delete this item?" data-method="post">Delete</a>
+                                        </p>
+
+                                        <h1>Loyihaning bajarilishi haqida hisobot</h1>
+                                        <div id="w2" class="grid-view">
+                                            <div class="summary">Showing <b>1-11</b> of <b>11</b> items.</div>
+                                            <table class="table table-striped table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Full name</th>
+                                                    <th><a href="/user/my-tendrs/view?id=1&amp;dp-1-sort=tendr_step_completed_part" data-sort="tendr_step_completed_part">Completed part</a></th>
+                                                    <th><a href="/user/my-tendrs/view?id=1&amp;dp-1-sort=tendr_step_file" data-sort="tendr_step_file">File</a></th>
+                                                    <th><a href="/user/my-tendrs/view?id=1&amp;dp-1-sort=tendr_step_time" data-sort="tendr_step_time">Time</a></th>
+                                                    <th><a href="/user/my-tendrs/view?id=1&amp;dp-1-sort=tendr_step_confirm" data-sort="tendr_step_confirm">Confirm</a></th>
+                                                    <th class="action-column">&nbsp;</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr data-key="1">
+                                                    <td>1</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0.1</td>
+                                                    <td><a href="/files/">Downlad</a></td>
+                                                    <td>2019-04-16 10:18:08</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=1"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                <tr data-key="24">
+                                                    <td>2</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0</td>
+                                                    <td><a href="/files/step_0.87905900_1555662274_1_2_1.txt">Downlad</a></td>
+                                                    <td>2019-04-19 11:24:34</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=24"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                <tr data-key="25">
+                                                    <td>3</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0</td>
+                                                    <td><a href="/files/step_0.06619700_1555662326_1_2_1.txt">Downlad</a></td>
+                                                    <td>2019-04-19 11:25:26</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=25"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                <tr data-key="26">
+                                                    <td>4</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0</td>
+                                                    <td><a href="/files/step_0.86113500_1555662417_1_2_1.txt">Downlad</a></td>
+                                                    <td>2019-04-19 11:26:57</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=26"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                <tr data-key="27">
+                                                    <td>5</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0.01</td>
+                                                    <td><a href="/files/step_0.54016400_1555662511_1_2_1.txt">Downlad</a></td>
+                                                    <td>2019-04-19 11:28:31</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=27"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                <tr data-key="28">
+                                                    <td>6</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0.02</td>
+                                                    <td><a href="/files/step_0.92913400_1555662550_1_2_1.txt">Downlad</a></td>
+                                                    <td>2019-04-19 11:29:10</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=28"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                <tr data-key="29">
+                                                    <td>7</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0.01</td>
+                                                    <td><a href="/files/step_0.68449900_1555662750_1_2_1.txt">Downlad</a></td>
+                                                    <td>2019-04-19 11:32:30</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=29"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                <tr data-key="30">
+                                                    <td>8</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0</td>
+                                                    <td><a href="/files/step_0.61503300_1555662904_1_2_1.txt">Downlad</a></td>
+                                                    <td>2019-04-19 11:35:04</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=30"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                <tr data-key="31">
+                                                    <td>9</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0.04</td>
+                                                    <td><a href="/files/step_0.27856400_1555665739_1_2_1.docx">Downlad</a></td>
+                                                    <td>2019-04-19 12:22:19</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=31"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                <tr data-key="32">
+                                                    <td>10</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0.02</td>
+                                                    <td><a href="/files/step_0.88884800_1555665814_1_2_1.txt">Downlad</a></td>
+                                                    <td>2019-04-19 12:23:34</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=32"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                <tr data-key="33">
+                                                    <td>11</td>
+                                                    <td>Admin Adminov</td>
+                                                    <td>0.2</td>
+                                                    <td><a href="/files/step_0.51684400_1555669871_1_2_1.txt">Downlad</a></td>
+                                                    <td>2019-04-19 01:31:11</td>
+                                                    <td>no</td>
+                                                    <td><a href="/user/my-tendrs/step?id=33"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #END# Tabs With Icon Title -->
+
+    </div>
+</section>
+
+<!-- Jquery Core Js -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="../../plugins/node-waves/waves.js"></script>
+
+<!-- Custom Js -->
+<script src="../../js/admin.js"></script>
+
+<!-- Demo Js -->
+<script src="../../js/demo.js"></script>
+</body>
+
+</html>
